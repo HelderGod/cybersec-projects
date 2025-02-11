@@ -21,12 +21,17 @@ This backdoor allows remote control over a compromised machine, featuring remote
 - The attacker can send commands to control the target.
 
 ### Setup
-1. On the attacker's machine, start the server and wait for connections:
+
+1. **Important:** In both `server.py` and `backdoor.py`, replace the IP address with your server's IP.
+
+3. **Network Setup:**  The attacker machine and the target machine **must be connected to the same network** for the connection to work properly. You can use a VM or physical machines, but they must be able to communicate via the same local network.
+
+2. On the attacker's machine, start the server and wait for connections:
     ```bash
     python server.py
     ```
 
-2. (Optional) If you want the Python file to be an executable for Windows, run this command:
+3. (Optional) If you want the Python file to be an executable for Windows, run this command:
     ```bash
     pyinstaller backdoor.py --onefile --noconsole
     ```
