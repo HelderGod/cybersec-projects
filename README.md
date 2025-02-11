@@ -36,7 +36,7 @@ This backdoor allows remote control over a compromised machine, featuring remote
     pyinstaller backdoor.py --onefile --noconsole
     ```
    Then execute the file from the `dist` folder.  
-   Otherwise, you can compile it through Python:
+   Otherwise, you can run it through Python:
     ```bash
     python backdoor.py
     ```
